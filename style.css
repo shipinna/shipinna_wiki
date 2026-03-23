@@ -1,3 +1,16 @@
-p {
-	color:red;
+* {box-sizing:border-box;}
+body {background:#143A3D; font-family:monospace; color:#7DE186;}
+p {background:#06282C; padding:15px; font-size:14px; line-height:1.4;}
+img {max-width:100%;}
+.wrap {max-width:1120px; margin:0 auto;}
+.container {column-count:3; column-gap:0; margin-top:15px;}
+.block {display:inline-block; width:100%; padding:0 7.5px;}
+.block > div {margin-bottom:15px; font-size:0; border:2px solid #06282C}
+
+@media screen and (max-width:1024px) {
+  .container {column-count:2;}
+}
+
+@media screen and (max-width:640px) {
+  .container {column-count:1;}
 }
